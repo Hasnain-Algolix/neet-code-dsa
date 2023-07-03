@@ -1,0 +1,29 @@
+Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+
+Example:
+  Input: s = "anagram", t = "nagaram"
+  Output: true
+
+
+In simple words, problems says that, we need to figure out if the 'S' is equal to 'T', meaning, if we re-arrange the letter so the 't' if it match up with 's' than its anagram of s.
+
+
+General Solution:
+  We know that to match the string characters, both strings should have same length of characters. So the first validation is length of the characters.
+
+
+Solution - 1
+  Time = O(n) - O(2n)
+  Space = O(n)
+  Create two hash tables for each strings, then loop over both of the strings and store each charachters of the strings into hash tables, while adding the string charachters into hash tables as the value of these characters we will increase the number. Now we added all the charachters into hash tables, loop over the hash table and match the characters of each hash table, if the characters are not same than return false, otherwise return true
+
+
+
+Solution - 2
+  Time = O(n log n)
+  Space = O(1)
+  Sort the both strings, and than check if they are equals to each other using equality opeartor.
+
+

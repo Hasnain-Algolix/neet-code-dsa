@@ -1,1 +1,2 @@
-require('./contains-duplicates');
+// require('./contains-duplicates');
+require('./valid-anagram');
