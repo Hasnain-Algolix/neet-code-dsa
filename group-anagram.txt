@@ -1,0 +1,13 @@
+Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+Like:
+  const input = ["eat","tea","tan","ate","nat","bat"]
+  const output =  [["bat"],["nat","tan"],["ate","eat","tea"]]
+
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+
+
+Solution:
+  Create a hash table, loop the input array that contains all the strings. Inside the loop create an array and fill it with 26 zeros. 
+  We have 26 characters in ABC, and all the letters are in lowercase. While we are iterating the array of anagram, first we will get all words in the iteration, we do another loop inside the loop, and in this loop will loop over the each word, and we will count how many letter and which letter each word have
+
+
